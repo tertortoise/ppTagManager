@@ -1,0 +1,26 @@
+.EntryContainer {
+  
+  display: flex;
+  flex-wrap: nowrap;
+  
+  
+
+  .TagsContainer {
+    flex: 0 0 20%;
+  }
+
+  .InputsContainer {
+    flex: 0 1 50%;
+
+    button {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .ResultSection {
+      font-size: 0.7rem;
+      font-style: italic;
+      color: #999;
+    }
+  }
+}

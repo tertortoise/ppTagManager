@@ -1,0 +1,19 @@
+.SelectionArea {
+  .AddTag {
+    margin-left: 0.5rem;
+  }
+  .SelectionItems {
+    
+
+    .SelectionItem {
+      label {
+        position: relative;
+        padding-left: 2px;
+      }
+      input {
+        position: absolute;
+        visibility: hidden;
+      }
+    }
+  }
+}

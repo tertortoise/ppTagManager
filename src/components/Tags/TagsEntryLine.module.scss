@@ -1,0 +1,12 @@
+.Tag {
+  .TagName {
+    font-weight: 700;
+  }
+  .TagPath {
+    font-size: 0.7rem;
+  }
+}
+
+.Tag:not(:last-child)::after {
+  content: ", ";
+}

@@ -1,0 +1,47 @@
+@import '../../scss/abstract.scss';
+
+.EntryLine {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 2px solid $border-color-prime;
+  margin-bottom: 0.3rem;
+  padding: 2px;
+
+  .Contents {
+    flex: 1 8 auto;
+    .Line {
+      display: flex;
+      .Label {
+        flex: 0 0 8%;
+      }
+      .LineContent {
+        flex: 1 1 90%;
+        border: 1px solid $border-color-prime-lighter;
+      }
+    }
+    .Title {
+      .LineContent {
+        font-weight: 700;
+      }
+      
+    }
+  }
+
+  > * {
+    padding: 0.2rem;
+  }
+
+  .Attributes {
+    flex: 0 2 10rem;
+    text-align: center;
+    *:not(.Buttons):not(.Button) {
+      border: 1px solid $border-color-prime-lighter;
+    }
+  }
+
+  .Buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+}

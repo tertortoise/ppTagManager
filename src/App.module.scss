@@ -1,0 +1,16 @@
+.App {
+  .AppHeader nav ul {
+    margin-bottom: 0.7rem;
+    li {
+      display: inline;
+      padding: 2rem;
+      a {
+        text-decoration: none;
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

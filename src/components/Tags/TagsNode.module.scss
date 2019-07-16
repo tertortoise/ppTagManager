@@ -1,0 +1,61 @@
+.Tag {
+  display: flex;
+  flex-wrap: nowrap;
+  border-bottom: 1px #ccc solid;
+  .Buttons {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .Buttons button {
+    margin-left: .6rem;
+    padding: 3px;
+  }
+  button {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-width: 1px;
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+
+  .Content {
+    flex: 0 0 auto;
+    position: relative;
+
+    .ButtonExpand {
+      position: absolute;
+    }
+    label {
+      position: relative;
+      margin-left: 1.3rem;
+      background-color: transparent;
+
+      input[type="checkbox"] {
+        position: absolute;
+        visibility: hidden;
+        &:checked {
+          background-color: violet;
+        }
+      }
+      input[type="checkbox"] ~ span.Label::before {
+        padding-right: 3px;
+        content: '\002610';
+      }
+      input[type="checkbox"]:hover ~ span.Label::before {
+        background-color: #ddd;
+      }
+      input[type="checkbox"]:focus ~ span.Label::before {
+        background-color: #bbb;
+      }
+      input[type="checkbox"]:checked ~ span.Label::before {
+        content: '\002611';
+      }
+      input[type="checkbox"]:indeterminate ~ span.Label::before {
+        content: '\002612';
+      }
+    }
+  }
+}

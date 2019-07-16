@@ -1,0 +1,22 @@
+.EntryContainer {
+  display: flex;
+  
+
+  .TagsContainer {
+    flex: 0 0 20%;
+  }
+
+  .InputsContainer {
+    flex: 0 0 50%;
+
+    button {
+      display: block;
+      margin: 0 auto;
+    }
+    .ResultSection {
+      font-size: 0.7rem;
+      font-style: italic;
+      color: #999;
+    }
+  }
+}
